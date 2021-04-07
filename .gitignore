@@ -17,6 +17,6 @@ mb.pid
 dist/
 **/.DS_Store
 .DS_Store
-.vscode/launch.json
+.vscode/
 .scannerwork
 storybook-static/

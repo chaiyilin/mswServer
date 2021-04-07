@@ -1,8 +1,9 @@
 import {groupBy, isEqual} from 'lodash'
-import {rest} from 'msw'
-import {setupServer} from 'msw/node'
+import {setupWorker, rest} from 'msw'
 
-const server = setupServer()
+export const worker = setupWorker(...handlers)
+
+worker.start()
 
 export const batchMock = mockConfigs => {
   const matchedMockConfigs = groupBy(mockConfigs, mockConfig => `${mockConfig.method}_${mockConfig.endpoint}`)

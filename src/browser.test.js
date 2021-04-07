@@ -1,4 +1,4 @@
-import {batchMock} from './server'
+import {batchMock} from './browser'
 
 describe('server', () => {
   test('can group if data is correct', () => {

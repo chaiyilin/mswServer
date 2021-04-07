@@ -1,0 +1,9 @@
+[
+  {
+    "method": "get",
+    "endpoint": "/a",
+    "payload": {"crn": "1"},
+    "status": 200,
+    "response": {}
+  }
+]
